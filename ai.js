@@ -13,7 +13,7 @@ export async function aiRobot(userId, message) {
     // 获取或初始化当前用户的对话上下文
     if (!conversationHistories[userId]) {
         conversationHistories[userId] = [
-            { role: "system", content: "你是一个专业的 ai 机器人，精通各类知识，能够精简的帮人解决问题" },
+            { role: "system", content: "你是一个专业的微信 ai 机器人，精通各类知识，能够精简的帮人解决问题" },
         ];
     }
 
