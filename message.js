@@ -23,7 +23,7 @@ export const messageFn = async (message, bot) => {
                 .text()
                 .replace(`@${bot.userSelf().name()}`, "")
                 .trim();
-            if (text.includes("丁真")) {
+            if (text.includes("小c")) {
                 const result = await aiRobot(contextId, text);
                 await message.say(result);
             }
